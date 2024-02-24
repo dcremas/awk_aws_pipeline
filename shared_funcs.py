@@ -1,4 +1,11 @@
 
+def s3_bucket_list(bucket_name, prefix, client):
+    s3_response = client.list_objects(Bucket=bucket_name, Prefix=prefix)
+    s3_response_list = [(responses['Key'].split('/')[1], responses['LastModified'], responses['Size'])
+                        for responses in s3_response['Contents'] if responses['Size'] > 0]
+    return s3_response_list
+
+
 def celsius_to_fahrenheit(num):
     result = (float(num) * 1.8) + 32
     return round(result, 2)

@@ -26,6 +26,12 @@ Visualization 2 - [Line & Bar Graphs of Historical and Forecasted Key Weather Me
 - Utlizing the Apple Weatherkit REST API create an S3 bucket of 112 objects (.json files) that represent the US Aiport locations data for the previously specified 20 day time period.  Produce this fresh view every 4 hours.
 - Build out a separted script that takes the 112 .json files, cleans and transforms the data and then uploads this new set of data to the AWS RDS postgresql database, also on the same sequence - just 15 minutes later.
 
+##### Unit Testing:
+
+- Six unit tests to ensure that the S3 staging and current directories have the proper amount of files, the size of the files is accurate and the last update stamp is within the proper time window after the process has was fully completed.
+- Two additional tests to ensure that the postgesql table has the right amount of records and was updated within the time window.
+- The testing logs are to be produced after the process is run, every four hours.
+
 ##### Technologies:
 
 1. Python and various standard library modules.

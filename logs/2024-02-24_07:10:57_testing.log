@@ -1,0 +1,13 @@
+test_current_file_count (__main__.TestS3AWK.test_current_file_count) ... ok
+test_current_files_lastupdate (__main__.TestS3AWK.test_current_files_lastupdate) ... ok
+test_current_filesizes (__main__.TestS3AWK.test_current_filesizes) ... ok
+test_db_lastupdate (__main__.TestS3AWK.test_db_lastupdate) ... ok
+test_db_recordcount (__main__.TestS3AWK.test_db_recordcount) ... ok
+test_staging_file_count (__main__.TestS3AWK.test_staging_file_count) ... ok
+test_staging_files_lastupdate (__main__.TestS3AWK.test_staging_files_lastupdate) ... ok
+test_staging_filesizes (__main__.TestS3AWK.test_staging_filesizes) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.755s
+
+OK
